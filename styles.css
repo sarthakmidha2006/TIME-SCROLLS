@@ -1,0 +1,206 @@
+
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: "Garamond", serif;
+    background-image: url('https://www.google.com/url?sahttps://www.google.co.in/url?sa=i&url=https%3A%2F%2Fwww.freepik.com%2Ffree-photos-vectors%2Fhistorical-background&psig=AOvVaw0hJ-5enDMgattPEo-_Ge8L&ust=1739133913877000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCJja1-r4tIsDFQAAAAAdAAAAABAJ=i&url=https%3A%2F%2Fstock.adobe.com%2Fsearch%3Fk%3Dhistory%2Bbackground&psig=AOvVaw2V8F59r6WHGFgBrbdpBUMc&ust=1739130027605000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCJCu6q3qtIsDFQAAAAAdAAAAABAE');
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    color: #d4af37;
+  }
+  
+  header {
+    background: #5a3e1b;
+    padding: 15px 0;
+    text-align: center;
+    color: #d4af37;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  nav ul li {
+    display: inline;
+  }
+  
+  nav ul li a {
+    color: #d4af37;
+    text-decoration: none;
+    font-size: 20px;
+    transition: color 0.3s, transform 0.3s;
+    font-weight: bold;
+  }
+  
+  nav ul li a:hover {
+    color: #ffcc00;
+    transform: scale(1.1);
+  }
+  
+  .container {
+    margin: 20px auto;
+    width: 80%;
+    max-width: 900px;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(212, 175, 55, 0.5);
+    flex-grow: 1;
+  }
+  
+  .tab-content {
+    display: none;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.85);
+    border-radius: 10px;
+    margin: 20px auto;
+    box-shadow: 0px 0px 15px rgba(212, 175, 55, 0.5);
+    animation: fadeIn 0.5s ease-in-out;
+  }
+  
+  .tab-content.active {
+    display: block;
+  }
+  
+  @keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+  }
+  
+  #results-container {
+    margin-top: 20px;
+  }
+  
+  .event-card {
+    background: #6d4c1a;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(212, 175, 55, 0.5);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .event-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 15px rgba(212, 175, 55, 0.7);
+  }
+  
+  .event-card h3 {
+    margin: 0;
+    color: #d4af37;
+  }
+  
+  .event-card p {
+    color: #ffffff;
+  }
+  
+  .read-more {
+    background: #a67c00;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background 0.3s;
+  }
+  
+  .read-more:hover {
+    background: #ffcc00;
+  }
+  
+  footer {
+    background: #3a2a13;
+    color: white;
+    padding: 15px 0;
+    margin-top: auto;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+  }
+#results-container,
+#popular-events {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+  margin-top: 20px;
+  justify-content: center;
+}
+
+
+.event-card {
+  background: #644924; 
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s, box-shadow 0.3s;
+  text-align: center;
+}
+
+.event-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+}
+
+.event-card h3 {
+  margin-top: 0;
+  color: #77651f; 
+}
+
+.read-more {
+  background: #b39549; 
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background 0.3s;
+}
+
+.read-more:hover {
+  background: #857243;
+}
+
+.search-container input {
+    width: 500px;
+    height: 70px;
+    font-size: 38px;
+    padding: 5px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .search-container button {
+    height: 45px;
+    font-size: 18px;
+    padding: 5px 15px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  
+  .search-container.small input {
+    width: 300px;
+    height: 50px;
+    font-size: 34px;
+  }
+  
+  .search-container.small button {
+    height: 55px;
+    font-size: 34px;
+    padding: 5px 10px;
+  }

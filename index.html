@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time Scrolls</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Time Scrolls</h1>
+        <nav>
+            <ul>
+                <li><a href="#home" class="tab-link" data-tab="home">Home</a></li>
+                <li><a href="#search" class="tab-link" data-tab="search">Search Events</a></li>
+                <li><a href="#popular" class="tab-link" data-tab="popular">Most Popular</a></li>
+                <li><a href="#about" class="tab-link" data-tab="about">About</a></li>
+                <li><a href="#contact" class="tab-link" data-tab="contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main class="container">
+        <section id="home" class="tab-content active">
+            <h2>Time Scrolls</h2>
+            <p>Discover historical events that shaped the world.</p>
+            <p>Welcome to TimeScrolls, your gateway to exploring history like never before. Our platform is designed to take you on a journey through time, allowing you to discover significant events by simply entering a date or an event name. Whether you’re a history enthusiast, a researcher, or just curious about the past, TimeScrolls provides a seamless way to unlock the stories that shaped our world.</p>
+            <h3>Our Mission</h3>
+            <p>At TimeScrolls, we believe that history should be accessible, engaging, and informative. Our mission is to bring historical knowledge to everyone by organizing and presenting key events in an interactive and user-friendly format. We strive to make history more than just facts—it’s a living timeline that connects the past with the present.</p>
+            <h3>How It Works</h3>
+            <ul>
+                <li>Enter a date or event name, and our system fetches relevant historical data.</li>
+                <li>Browse detailed descriptions, images, and key insights about each event.</li>
+                <li>Explore related events and discover the most popular moments in history.</li>
+                <li>Engage with curated content, timelines, and event highlights.</li>
+            </ul>
+            <h3>Why Choose TimeScrolls?</h3>
+            <ul>
+                <li>Comprehensive Data: We aggregate historical information from trusted sources to provide accurate and meaningful insights.</li>
+                <li>User-Friendly Interface: Our intuitive search system makes finding events effortless.</li>
+                <li>Trending History: We highlight the most searched and significant events, helping users explore popular moments in time.</li>
+                <li>Continuous Updates: History is always being explored, and we keep adding new insights and discoveries.</li>
+            </ul>
+            <p>🚀 Start Exploring Now!</p>
+        </section>
+        <section id="search" class="tab-content">
+            <form id="search-form">
+                <input type="text" id="search-input" placeholder="Search historical events" required>
+                <button type="submit">Search</button>
+            </form>
+            <div id="results-container"></div>
+        </section>
+        <section id="popular" class="tab-content">
+            <h2>Most Popular Events</h2>
+            <div id="popular-events"></div>
+            <p>Explore the most searched historical events.</p>
+        </section>
+        <section id="about" class="tab-content">
+            <h2>About Us</h2>
+            <p>We provide insights into historical events from reliable sources.</p>
+            <p>At TimeScrolls, we believe that history should be accessible, engaging, and informative. Our mission is to bring historical knowledge to everyone by organizing and presenting key events in an interactive and user-friendly format. We strive to make history more than just facts—it’s a living timeline that connects the past with the present.</p>
+            <h3>Join Us on This Journey Through Time</h3>
+            <p>Whether you’re looking to learn about world-changing events or simply want to explore what happened on your birthday, TimeScrolls is here to guide you. Start your journey through history today and uncover the moments that defined humanity.</p>
+        </section>
+        <section id="contact" class="tab-content">
+            <h2>Contact Us</h2>
+            <p>Email: info@timescrolls.com</p>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2025 Time Scrolls. All rights reserved.</p>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
